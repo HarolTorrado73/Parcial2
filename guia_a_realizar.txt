@@ -1,0 +1,116 @@
+🎓 Segundo parcial desarrollo de aplicaciones web
+Construcción de una Aplicación Web Modularizada con Vue.js y Bootstrap 5.3
+🕒 Duración: Estipulada en la actividad del parcial en la uvirtual
+👥 Trabajo en grupo: 2 estudiantes
+💻 Evidencia de trabajo: Repositorio en GitHub
+🧠 Competencia: Modularización, componentización y consumo de APIs externas
+🎯 Enfoque: Modularización, componentización y buenas prácticas con Vue 3 y Bootstrap 5.3
+
+🧭 Descripción de la actividad
+Cada grupo desarrollará una aplicación web modular y responsiva utilizando Vue.js y Bootstrap CSS.
+La aplicación representará un tipo de negocio elegido por los estudiantes (por ejemplo: tienda de ropa, cafetería, librería, electrónica, etc.) y deberá incluir componentes reutilizables, vistas dinámicas y consumo de datos desde una API externa.
+Cada grupo deberá:
+Escoger un tipo de negocio (ejemplo: tienda de ropa, librería, cafetería, etc.).
+Definir su paleta de colores y estilos CSS (usando variables de Bootstrap o clases personalizadas).
+Subir el proyecto a un repositorio GitHub publico, evidenciando colaboración (commits, ramas, pull requests).
+Pegar el enlace del repositorio de github en la entre de la actividad establecida en la uvirtual
+
+🔹 Requerimientos funcionales
+1. Estructura general del proyecto
+Organizar el proyecto de forma modular con carpetas separadas para componentes, vistas, rutas y servicios (API).
+Mantener un diseño responsivo utilizando Bootstrap CSS.
+El proyecto debe estar en un repositorio de GitHub, con evidencias del trabajo colaborativo (commits, ramas, pull requests).
+
+
+
+2. Vista de Login
+Crear una vista de inicio de sesión (LoginView) que valide usuarios desde un archivo JSON local (por ejemplo usuarios.json).
+Si las credenciales son correctas, redirige al usuario al Dashboard principal.
+En caso de error, mostrar un mensaje de validación con Bootstrap (alerta visual).
+En el README debe aclararse que esta validación es solo educativa y no representa un sistema de autenticación real.
+
+3. Dashboard principal
+Crear una vista DashboardView que contenga un menú de navegación lateral (Sidebar) y un encabezado (Navbar).
+El menú debe ser un componente reutilizable, de modo que al cambiar de vista (por ejemplo, “Productos” o “Clientes”) la barra lateral no se pierda.
+El área principal del dashboard debe mostrar las vistas hijas usando el sistema de rutas (vue-router).
+
+4. Gestión de Productos (ProductView)
+Crear una vista llamada ProductView que permita realizar operaciones de listado, creación, edición y eliminación de productos.
+La información no debe venir del LocalStorage, sino de una API externa pública o simulada.
+Los estudiantes pueden usar APIs como:
+FakeStore API
+DummyJSON Products API
+O crear su propia API con herramientas como MockAPI o JSON Server.
+Ejemplo conceptual:
+GET → https://fakestoreapi.com/products → listar productos
+POST → https://fakestoreapi.com/products → agregar producto
+PUT → https://fakestoreapi.com/products/1 → actualizar producto
+DELETE → https://fakestoreapi.com/products/1 → eliminar producto
+Los resultados deben mostrarse en una tabla estilizada con Bootstrap, incluyendo botones de acción (editar, eliminar, ver detalles).
+
+5. Componentes reutilizables
+La aplicación debe incluir componentes modulares:
+NavbarComponent: Encabezado superior con el nombre del negocio.
+SidebarComponent: Menú lateral con las rutas disponibles.
+FooterComponent: Pie de página con los derechos reservados.
+ProductCardComponent: Tarjeta individual para mostrar un producto (nombre, precio, imagen, botón de detalles).
+
+
+Estos componentes deben ser reutilizables y comunicarse mediante props y eventos cuando sea necesario.
+
+6. Ruteo y navegación
+Configurar el enrutamiento con vue-router para navegar entre vistas como:
+/login
+/dashboard
+/dashboard/productos
+/dashboard/clientes (opcional)
+El App.vue debe actuar como punto de entrada, cargando las vistas mediante <router-view>.
+El menú lateral debe mantenerse visible dentro del Dashboard al cambiar entre rutas hijas
+
+7. Estilos y coherencia visual
+Utilizar Bootstrap CSS para lograr una interfaz limpia, moderna y responsiva.
+Personalizar los colores y estilos de acuerdo con el tipo de negocio escogido.
+Mantener una coherencia visual entre componentes y vistas (tipografía, espaciado, bordes, sombras, etc.).
+
+📚 Documentación en el README.md
+El repositorio debe incluir un archivo README.md con la siguiente información:
+Descripción general del negocio y objetivo de la aplicación.
+Explicación de cómo se implementó la modularización (componentes, vistas, rutas).
+Ejemplo de consumo de la API externa para gestionar los productos.
+Ejemplo de comunicación entre componentes (props o eventos).
+Evidencia del trabajo colaborativo (enlaces a commits, ramas, PRs).
+
+💬 Sustentación
+Cada grupo presentará la aplicación en funcionamiento (10 minutos), explicando:
+Estructura del proyecto (componentes, vistas, rutas).
+Funcionamiento del login y del dashboard.
+Consumo de la API externa (listado, creación, edición, eliminación).
+Aplicación de Bootstrap en el diseño.
+Buenas prácticas utilizadas.
+
+📊 Rúbrica de Evaluación
+Criterio
+Descripción
+Peso
+Estructura modular y trabajo colaborativo
+Organización clara del proyecto y uso de GitHub
+15%
+Login funcional con JSON local
+Validación correcta y diseño coherente
+10%
+Gestión de productos con API externa
+Implementación de CRUD mediante peticiones HTTP
+20%
+Componentes y vistas reutilizables
+Uso correcto de props, eventos y rutas
+15%
+Integración visual con Bootstrap
+Diseño coherente y responsivo
+10%
+Buenas prácticas de código y modularización
+Convenciones, legibilidad y comentarios
+10%
+Sustentación técnica
+Claridad, dominio y demostración funcional
+20%
+

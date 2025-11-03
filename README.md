@@ -1,6 +1,8 @@
 # Aplicación Web Modularizada — Parcial 2
 
-Este repositorio contiene la estructura inicial y componentes para el segundo parcial: una aplicación web modularizada usando Vue 3 y Bootstrap 5.
+Proyecto: Tienda de ropa (ejemplo)
+
+Este repositorio contiene la estructura inicial y componentes para el segundo parcial: una aplicación web modularizada usando Vue 3 y Bootstrap 5. El proyecto está orientado a una tienda de ropa — campos de producto incluyen título, precio, talla y color — y está pensado como evidencia educativa.
 
 ## Nota importante sobre autenticación
 La vista de inicio de sesión (`src/views/LoginView.vue`) valida credenciales leyendo un fichero local `public/usuarios.json`. Esta validación **es solo educativa** y no representa un sistema de autenticación real. Los usuarios y contraseñas en `public/usuarios.json` están en texto plano para facilitar las pruebas, por lo que **no** deben usarse en producción.

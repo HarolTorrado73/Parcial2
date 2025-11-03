@@ -1,4 +1,20 @@
 <template>
+  <div class="container py-4">
+    <h1>Tienda - Panel de Control</h1>
+    <nav class="my-3">
+      <a class="btn btn-link" :href="'/dashboard/productos'">Productos</a>
+    </nav>
+    <router-view />
+  </div>
+</template>
+
+<script setup>
+// Placeholder Dashboard
+</script>
+
+<style scoped>
+</style>
+<template>
   <div class="d-flex">
     <SidebarComponent :items="menuItems" />
     <div class="flex-grow-1 d-flex flex-column min-vh-100">
